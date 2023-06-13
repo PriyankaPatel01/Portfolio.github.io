@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Open+Sans:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html
+{
+  scroll-behavior: smooth;
+}
+
+.menubar {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: palevioletred;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(83, 6, 32);
+}
+
+.home {
+  background-color: #000112;
+  color: aliceblue;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(
+    to bottom right,
+    #000112 50%,
+    rgb(247, 28, 64)
+  );
+}
+
+.home::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.name 
+{
+  color: pink;
+  padding-top: 40vh;
+  padding-left: 10vw;
+  font-size: 80px;
+  font-weight: 600;
+  float: left;
+  width: 33.33vw;
+}
+
+.profile_pic 
+{
+  width: 15vw;
+  padding-top: 30vh;
+  height: 50vh;
+  float: left;
+}
+
+.about 
+{
+  padding-top: 30vh;
+  padding-right: 10vw;
+  padding-left: 70vw;
+  font-size: larger;
+  font-weight: 200;
+  color: #969ae0;
+}
+
+.resume
+{
+  font-size: medium;
+  background-color: #969ae0;
+  color: #000112;
+  padding: 10px;
+  border-color: #000112;
+  border-radius: 20px;
+}
+
+.res
+{
+  text-decoration: none;
+}
+
+.projects 
+{
+  width: 100vw;
+  height: 100vh;
+  padding-top: 20vh;
+  padding-left: 5vw;
+  background-color: #000112;
+}
+
+.mySlides 
+{
+  display: none;
+}
+
+img 
+{
+  vertical-align: middle;
+}
+
+.proj
+{
+  background-color: #969ae0;
+  border-radius: 20px;
+  padding: 10px;
+  color: #000112;
+}
+
+a
+{
+  text-decoration: none;
+  color: #000112;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+.slider {
+  width: 70vw;
+  height: 60vh;
+}
+
+body {
+  overflow: hidden;
+}
+
+
+.skills 
+{
+  width: 100vw;
+  height: 100vh;
+  padding-top: 20vh;
+  padding-left: 5vw;
+  background-color: #000112;
+}
+
+
+
+table
+{
+  margin-left: 20vw;
+}
+
+td
+{
+  color: #f2f2f2;
+  padding: 10vh;
+  align-items: center;
+  font-size: larger;
+}
+
+.contacts
+{
+  width: 100vw;
+  height: 100vh;
+  padding-top: 15vh;
+  background-color: #000112;
+  float: left;
+}
+.cntct
+{
+  color: #969ae0;
+}
+
+.left
+{
+  color: #f2f2f2;
+  margin-right: 70vw;
+  margin-top: 10vh;
+}
+
+.right
+{
+  display: flex;
+  border: 2px solid black;
+  outline: #717171 solid 5px;
+  margin: auto;
+  padding: 30px;
+  text-align: left;
+  margin-top: 15vh;
+  margin-right: 15vw;
+  font-size: medium;
+}
+
+.send
+{
+  padding: 10px;
+  background-color:#969ae0;
+  color: #000112;
+  font-size: medium;
+  border-radius: 20px;
+  font-weight: 800;
+  border-color: 2px solid #000112;
+
+}
+.para
+{
+  padding-right: 20vw;
+}
+
+.tbl
+{
+  padding: 0%;
+  margin: auto;
+  margin-left: 5vw;
+}
